@@ -15,7 +15,7 @@ class RunScriptOnChangeHandler(FileSystemEventHandler):
 
 
 if __name__ == "__main__":
-    script_to_watch = 'python_repos.py'
+    script_to_watch = 'python_repos_visual.py'
     event_handler = RunScriptOnChangeHandler(script_to_watch)
     observer = Observer()
     observer.schedule(event_handler, path='.', recursive=False)
